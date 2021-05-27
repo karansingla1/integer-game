@@ -23,10 +23,11 @@ function updateProblem() {
     state.currentProblem = generateProblem()
     problemElement.innerHTML = `${state.currentProblem}`
     ourField.value = ""
-    ourField.focus()
+    
 }
 updateProblem()
 numberOfTerms.textContent = state.maxExpLength
+ourField.focus()
 
 function generateNumber(max) {
     return Math.floor(Math.random() * (max + 1))
@@ -71,6 +72,7 @@ ourForm.addEventListener("submit", handleSubmit)
 
 function handleSubmit(e) {
     e.preventDefault()
+    ourField.focus()
 
     let correctAnswer
     const p = state.currentProblem
@@ -138,7 +140,7 @@ function longerExp() {
         numberOfTerms.textContent = state.maxExpLength
 
     } else {
-        alert("Too long!")
+    
     }
 }
 
