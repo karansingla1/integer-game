@@ -118,6 +118,7 @@ body.overlay-is-open .main-ui{
     padding: 12px 10px;
     font-size: 1rem;
     border: 2px solid black ;
+    text-align: center;
   }
 
   .submit-button{
@@ -127,7 +128,6 @@ body.overlay-is-open .main-ui{
     padding: 10px 14px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 20px;
     margin-top: 20px;
 
   }
