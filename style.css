@@ -1,7 +1,14 @@
 .main-ui {
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 40px;
+  }
+
+  .heading{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-family: monospace;
   }
 
   .our-form {
@@ -49,7 +56,11 @@
     justify-content: center;
     align-items: center;
     transform: scale(1.2);
-    transition: all 0.4s ease-out
+    transition: all 0.4s ease-out;
+
+}
+.overlay-inner{
+  text-align: center;
 }
 
 body.overlay-is-open .overlay{
@@ -62,9 +73,10 @@ body.overlay-is-open .main-ui{
 }
 
 .problem {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .status {
@@ -85,7 +97,7 @@ body.overlay-is-open .main-ui{
 
   .reset-button {
     font-size: 1.2rem;
-    background-color: #004094;
+    background-color: #000000;
     border: none;
     color: #FFF;
     border-radius: 7px;
@@ -96,11 +108,11 @@ body.overlay-is-open .main-ui{
   }
   
   .reset-button:hover {
-    background-color: #00367e;
+    background-color: #000000;
   }
   
   .reset-button:focus {
-    background-color: #00275a;
+    background-color: #000000;
   }
 
   .our-field{
@@ -117,4 +129,26 @@ body.overlay-is-open .main-ui{
     font-size: 16px;
     cursor: pointer;
     margin-left: 20px;
+  }
+
+  .end-game-message, .level-message-1{
+    font-size: 24px;
+    background-color:rgb(122, 255, 155);
+    padding: 16px;
+    font-family: monospace;
+    font-weight: bold
+  }
+
+  .footer{
+    padding:16px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .more-numbers{
+    text-align: center;
+  }
+
+  .levels{
+    padding-top: 40px;
   }

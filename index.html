@@ -1,48 +1,73 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Math Game</title>
-        <link rel="stylesheet" href="style.css"></title>
-    </head>
 
-    <body>
-        <div class="main-ui">
-            <p class="problem"></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Integer Game!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ba4be116d.js" crossorigin="anonymous"></script>
 
-            <form action="" class="our-form">
-                <input type="number" class="our-field" autocomplete="off">
-                <button class="submit-button">Submit</button>
-            </form>
-            <p class="status">You need <span class="points-needed">10</span> more points and are allowed to make <span class="mistakes-allowed">2</span> more mistakes. </p>
-            
-            <div class="progress">
-                <div class="boxes">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
-                <div class="progress-inner"></div>
+    </title>
+</head>
 
+<body>
+    <div class="main-ui">
+        <div class="heading">The Integer Game!</div>
+        <p class="problem"></p>
+
+        <form action="" class="our-form">
+            <input type="number" class="our-field" autocomplete="off">
+            <button class="submit-button">Submit</button>
+        </form>
+        <p class="status">You need <b><span class="points-needed">10</span> more points</b> and are allowed to make
+            <b><span class="mistakes-allowed">2</span> more mistakes.</b> </p>
+
+        <div class="progress">
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
+            <div class="progress-inner"></div>
 
+        </div>
+
+        <div class="levels">
+            <div class="more-numbers">
+                <p class='level-message-1'>
+                    The maximum number of terms in the expression will be <span class="number-of-terms"></span>.
+                </p>
+                <p class="total-numbers">Want a longer or shorter expression?</p>
+                <button class="inc-numbers"><i class="fas fa-arrow-circle-up fa-3x"></i></button>
+                <button class="dec-numbers"><i class="fas fa-arrow-circle-down fa-3x"></i></button>
                 
-        </div>
-
-        <div class="overlay">
-            <div class="overlay-inner">
-                <p class="end-game-message"></p>
-                <button class = "reset-button">Start Again!</button>
             </div>
         </div>
 
-        <script src = "main.js"></script>
-    </body>
+        
+
+    </div>
+
+    <div class="footer">
+        <div class="made-by">Made by <a href="https://www.loveformath.com">Love For Math</a>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlay-inner">
+            <p class="end-game-message"></p>
+            <button class="reset-button">Start Again!</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
 </html>
